@@ -1,0 +1,3 @@
+k8s.gcr.io/ingress-nginx/controller:v0.40.2=skicr.azurecr.io/gcr-ingress-nginx/controller:v0.40.2
+docker.io/jettech/kube-webhook-certgen:v1.3.0=skicr.azurecr.io/docker-jettech/kube-webhook-certgen:v1.3.0
+k8s.gcr.io/defaultbackend-amd64:1.5=skicr.azurecr.io/gcr/defaultbackend-amd64:1.5

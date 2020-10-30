@@ -1,0 +1,26 @@
+controller:
+  image:
+    repository: skicr.azurecr.io/gcr-ingress-nginx/controller  #k8s.gcr.io/ingress-nginx/controller
+    tag: "v0.40.2"
+    digest: ""
+  replicaCount: 2
+  service:
+    loadBalancerIP: 10.242.18.125
+    annotations:
+      service.beta.kubernetes.io/azure-load-balancer-internal: "true"
+  resources:
+    requests:
+      cpu: 100m
+      memory: 90Mi
+  admissionWebhooks:
+    patch:
+      image:
+        repository: skicr.azurecr.io/docker-jettech/kube-webhook-certgen #docker.io/jettech/kube-webhook-certgen
+        tag: v1.3.0
+defaultBackend:
+  image:
+    repository: skicr.azurecr.io/gcr/defaultbackend-amd64    #k8s.gcr.io/defaultbackend-amd64
+    tag: "1.5"
+
+imagePullSecrets:
+  - name: skicr

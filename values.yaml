@@ -18,6 +18,7 @@ controller:
         repository: skicr.azurecr.io/docker-jettech/kube-webhook-certgen #docker.io/jettech/kube-webhook-certgen
         tag: v1.3.0
 defaultBackend:
+  enabled: true
   image:
     repository: skicr.azurecr.io/gcr/defaultbackend-amd64    #k8s.gcr.io/defaultbackend-amd64
     tag: "1.5"

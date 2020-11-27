@@ -9,7 +9,7 @@ kubectl create secret docker-registry skicr \
     --namespace ingress \
     --docker-server=skicr.azurecr.io \
     --docker-username=skicr \
-    --docker-password=mVCK=HgFUzOKTpkTPS8N1QpoKJ8wUrxJ
+    --docker-password=.......
 ```
 
 ```
